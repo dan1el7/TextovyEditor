@@ -40,7 +40,7 @@
             <TextBlock HorizontalAlignment="Left" 
            Margin="60,0,0,0" 
            TextWrapping="Wrap" 
-           Text="" 
+           Text=""
            VerticalAlignment="Center" 
            Height="291" 
            Width="242"
