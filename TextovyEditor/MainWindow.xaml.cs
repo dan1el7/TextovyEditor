@@ -48,7 +48,7 @@ namespace TextovyEditor
 
             if (Vstup.Text.Length == 0)
             {
-
+                MessageBox.Show("Napiš nějaký text!!!", "Chyba");
             }
 
             else
@@ -77,11 +77,6 @@ namespace TextovyEditor
 
         private void uloz_Click(object sender, RoutedEventArgs e)
         {
-            if (Vstup.Text.Length == 0)
-            {
-                MessageBox.Show("Napiš nějaký text!!!", "Chyba");
-            }
-
             Zapis(Vstup.Text);
             Vstup.Text = "";
             Precti();
