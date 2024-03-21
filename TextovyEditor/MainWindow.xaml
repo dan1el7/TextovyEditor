@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TextovyEditor"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -36,15 +36,17 @@
                 VerticalAlignment="Top" 
                 Width="91" 
                 Click="Nacist_BTN" Height="30" BorderBrush="{x:Null}"/>
-        <TextBlock HorizontalAlignment="Left" 
-                   Margin="60,0,0,0" 
-                   TextWrapping="Wrap" 
-                   Text="" 
-                   VerticalAlignment="Center" 
-                   Height="291" 
-                   Width="242"
-                   Background="White"
-                   x:Name="TB"/>
+        <ScrollViewer Margin="10,70,466,69" CanContentScroll="True" VerticalScrollBarVisibility="Auto">
+            <TextBlock HorizontalAlignment="Left" 
+           Margin="60,0,0,0" 
+           TextWrapping="Wrap" 
+           Text="" 
+           VerticalAlignment="Center" 
+           Height="291" 
+           Width="242"
+           Background="White"
+           x:Name="TB"/>
+        </ScrollViewer>
         <Label Content="Napiš text pro uložení" 
                HorizontalAlignment="Left" 
                Margin="452,125,0,0" 
